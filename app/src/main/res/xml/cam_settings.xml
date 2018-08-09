@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="카메라 설정">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_video"
+            android:title="영상 촬영" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_photolog"
+            android:title="포토로그" />
+        <ListPreference
+            android:key="cam_period_setting"
+            android:title="주기 설정"
+            android:entries="@array/period_entries"
+            android:entryValues="@array/period_values"
+            android:summary="%s"
+            android:defaultValue="5"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
